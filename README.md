@@ -67,8 +67,9 @@ Version
 - 2.0 February 2023 Addition of g_cons_raw of Exodus-Deuteronomy.
 - 3.0 June 2023 Addition of all morphemes of Genesis-Deuteronomy.
 - 4.0 May 2025 addition of phrase atoms by Saulo de Oliveira Cantanhêde.
-- 5.0.1 October 2025 addition of phrases.
-- 6.0.0 February 2026 addition of phrase atoms.
+- 5.0 October 2025 addition of phrases.
+- 6.0 February 2026 addition of clause atoms.
+- 7.0 addition of clauses.
 
 ### Features
 Currently, the following features exist for all books:
