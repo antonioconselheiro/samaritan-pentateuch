@@ -6,14 +6,13 @@ This is the [Text-Fabric](https://github.com/annotation/text-fabric) representat
 The dataset is work in progress, and so far, we have added a number of word features, which you find in the tf folder. The [feature documentation](https://github.com/DT-UCPH/sp/blob/main/docs/README.md) can be found in the docs folder. They are similar to those of the Biblia Hebraica Stuttgartensia Amstelodamensis (BHSA), so we refer to the [BHSA feature documentation](https://etcbc.github.io/bhsa/) for more explanation of the features.
 Apart from word level annotations, the dataset contains phrase (atom) boundaries and clause atom boundaries. Phrase features like phrase type and phrase function will be added later.
 
-### Publication
+### Publications
 
-For an introduction to the dataset and its features, see this paper:
+For an introduction to the dataset and its features, see these papers:
 
-Martijn Naaijer, Christian Canu Højgaard, Stefan Schorch, and Martin Ehrensvärd (2024)\
-Text-Fabric Dataset of the Samaritan Pentateuch\
-Research Data Journal for the Humanities and Social Sciences\
-https://doi.org/10.1163/24523666-bja10051
+Naaijer, M., Højgaard, C. C., Schorch, S., & Ehrensvärd, M. (2024). Text-Fabric Dataset of the Samaritan Pentateuch. Research Data Journal for the Humanities and Social Sciences, 9(1), 1-13. https://doi.org/10.1163/24523666-bja10051
+
+Cantanhêde, S. d. O., Naaijer, M., Højgaard, C. C., & Glanz, O. (2026). Identifying Phrase Boundaries in the Samaritan Pentateuch with Machine Learning. Religions, 17(2), 192. https://doi.org/10.3390/rel17020192
 
 ### Use of the dataset
 
