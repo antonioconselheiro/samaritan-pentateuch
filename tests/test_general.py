@@ -122,7 +122,7 @@ def test_unexpected_verbal_stem():
     assert all({not F.g_vbs.v(w) for w in F.otype.s('word') if F.sp.v(w) not in {'verb'}})
 
 def test_allowed_verbal_stem():
-    assert all({F.g_vbs.v(w) in {'',']]',']H]',']N]',']T]',']HT]',']W]',']CT]',']HW]',']HCT]',']S]',']>]',']F]',']HF]',']Y]'} for w in F.otype.s('word')})
+    assert all({F.g_vbs.v(w) in {'',']]',']H]',']N]',']T]',']HT]',']W]',']CT]',']HW]',']HCT]',']S]',']>]',']F]',']HF]',']Y]',']X]'} for w in F.otype.s('word')})
 
 def test_expected_verbal_ending():
     assert all({F.g_vbe.v(w) for w in F.otype.s('word') if F.sp.v(w) in {'verb'}})
