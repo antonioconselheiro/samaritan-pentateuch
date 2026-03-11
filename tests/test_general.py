@@ -11,7 +11,7 @@ latest_data_folder = sorted(os.listdir(os.path.join(ROOT_DIR, TF_FOLDER)))[-1]
 
 TF = Fabric(locations=os.path.join(ROOT_DIR, TF_FOLDER, latest_data_folder))
 api = TF.load('''
-    otype g_cons_raw g_cons g_cons_utf8 lex g_pfm g_vbs g_lex g_vbe g_nme g_uvf g_prs sp vt ps nu gn prs_nu prs_ps prs_gn trailer ETCBC_parsing
+    otype g_cons_raw g_cons g_cons_utf8 lex gloss language g_pfm g_vbs g_lex g_vbe g_nme g_uvf g_prs sp vt ps nu gn prs_nu prs_ps prs_gn trailer ETCBC_parsing
 ''')
 api.loadLog()
 api.makeAvailableIn(globals())
@@ -111,6 +111,12 @@ def test_lexemes_advb_conj_prep_pron_nega_inrg_intj_ending():
     
 def test_lexemes_subs_adjv_ending():
     assert all({F.lex.v(w)[-1] == '/' for w in F.otype.s('word') if F.sp.v(w) in {'subs', 'nmpr', 'adjv'}})
+
+def test_glosses():
+    assert all({F.gloss.v(w) != '' for w in F.otype.s('word')})
+
+def test_language():
+    assert all({F.language.v(w) in {'Hebrew','Aramaic'} for w in F.otype.s('word')})
 
 def test_unexpected_preformative():
     assert all({not F.g_pfm.v(w) for w in F.otype.s('word') if F.sp.v(w) not in {'verb'}})
