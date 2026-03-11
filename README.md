@@ -16,10 +16,10 @@ Cantanhêde, S. d. O., Naaijer, M., Højgaard, C. C., & Glanz, O. (2026). Identi
 
 ### Use of the dataset
 
-You can use the dataset freely for research and education. If you do so, please refer to the paper. Also refer to the dataset in the following way:
+You can use the dataset freely for research and education. If you do so, please refer to the papers. Also refer to the dataset in the following way:
 
-Christian Canu Højgaard, Martijn Naaijer, & Stefan Schorch. (2023). 
-Text-Fabric Dataset of the Samaritan Pentateuch. Zenodo. 
+Christian Canu Højgaard, Martijn Naaijer, & Stefan Schorch. (2023).
+Text-Fabric Dataset of the Samaritan Pentateuch. Zenodo.
 https://doi.org/10.5281/zenodo.7734632
 
 You can also refer to specific versions of the dataset.
@@ -70,9 +70,13 @@ Version
 - 6.0.0 February 2026 addition of phrase atoms.
 
 ### Features
-Currently, the following features exist for all books:
+Currently, the following features exist for all books.
+- book
+- chapter
+- verse
 - g_cons
 - lex
+- gloss
 - sp
 - g_vbs
 - g_pfm
@@ -83,11 +87,13 @@ Currently, the following features exist for all books:
 - g_prs
 - vt
 - ps
-- prs_ps
 - nu
-- prs_nu
 - gn
+- prs_ps
+- prs_nu
 - prs_gn
+- language
+- trailer
 
 ### Textual issues
-Some annotations are dubious due to idiosyncracies in the SP manuscript used for this project. The issues are documented in the folder textual_issues.
+Some annotations are dubious due to idiosyncrasies in the SP manuscript used for this project. The issues are documented in the folder textual_issues.
