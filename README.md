@@ -6,21 +6,20 @@ This is the [Text-Fabric](https://github.com/annotation/text-fabric) representat
 The dataset is work in progress, and so far, we have added a number of word features, which you find in the tf folder. The [feature documentation](https://github.com/DT-UCPH/sp/blob/main/docs/README.md) can be found in the docs folder. They are similar to those of the Biblia Hebraica Stuttgartensia Amstelodamensis (BHSA), so we refer to the [BHSA feature documentation](https://etcbc.github.io/bhsa/) for more explanation of the features.
 Apart from word level annotations, the dataset contains phrase (atom) boundaries and clause atom boundaries. Phrase features like phrase type and phrase function will be added later.
 
-### Publication
+### Publications
 
-For an introduction to the dataset and its features, see this paper:
+For an introduction to the dataset and its features, see these papers:
 
-Martijn Naaijer, Christian Canu Højgaard, Stefan Schorch, and Martin Ehrensvärd (2024)\
-Text-Fabric Dataset of the Samaritan Pentateuch\
-Research Data Journal for the Humanities and Social Sciences\
-https://doi.org/10.1163/24523666-bja10051
+Naaijer, M., Højgaard, C. C., Schorch, S., & Ehrensvärd, M. (2024). Text-Fabric Dataset of the Samaritan Pentateuch. Research Data Journal for the Humanities and Social Sciences, 9(1), 1-13. https://doi.org/10.1163/24523666-bja10051
+
+Cantanhêde, S. d. O., Naaijer, M., Højgaard, C. C., & Glanz, O. (2026). Identifying Phrase Boundaries in the Samaritan Pentateuch with Machine Learning. Religions, 17(2), 192. https://doi.org/10.3390/rel17020192
 
 ### Use of the dataset
 
-You can use the dataset freely for research and education. If you do so, please refer to the paper. Also refer to the dataset in the following way:
+You can use the dataset freely for research and education. If you do so, please refer to the papers. Also refer to the dataset in the following way:
 
-Christian Canu Højgaard, Martijn Naaijer, & Stefan Schorch. (2023). 
-Text-Fabric Dataset of the Samaritan Pentateuch. Zenodo. 
+Christian Canu Højgaard, Martijn Naaijer, & Stefan Schorch. (2023).
+Text-Fabric Dataset of the Samaritan Pentateuch. Zenodo.
 https://doi.org/10.5281/zenodo.7734632
 
 You can also refer to specific versions of the dataset.
@@ -67,14 +66,17 @@ Version
 - 2.0 February 2023 Addition of g_cons_raw of Exodus-Deuteronomy.
 - 3.0 June 2023 Addition of all morphemes of Genesis-Deuteronomy.
 - 4.0 May 2025 addition of phrase atoms by Saulo de Oliveira Cantanhêde.
-- 5.0 October 2025 addition of phrases.
-- 6.0 February 2026 addition of clause atoms.
-- 7.0 addition of clauses.
+- 5.0.1 October 2025 addition of phrases.
+- 6.0.0 February 2026 addition of phrase atoms.
 
 ### Features
-Currently, the following features exist for all books:
+Currently, the following features exist for all books.
+- book
+- chapter
+- verse
 - g_cons
 - lex
+- gloss
 - sp
 - g_vbs
 - g_pfm
@@ -85,11 +87,13 @@ Currently, the following features exist for all books:
 - g_prs
 - vt
 - ps
-- prs_ps
 - nu
-- prs_nu
 - gn
+- prs_ps
+- prs_nu
 - prs_gn
+- language
+- trailer
 
 ### Textual issues
-Some annotations are dubious due to idiosyncracies in the SP manuscript used for this project. The issues are documented in the folder textual_issues.
+Some annotations are dubious due to idiosyncrasies in the SP manuscript used for this project. The issues are documented in the folder textual_issues.
