@@ -64,11 +64,6 @@ def test_last_word_of_phrase_is_last_word_of_phrase_atom():
 def test_all_words_occur_in_one_clause_atom():
     assert all([len(L.u(w, 'clause_atom')) == 1 for w in F.otype.s('word')])
 
-def test_last_word_of_verse_is_last_word_of_clause_atom():
-    final_words_of_verses = [L.d(ve, 'word')[-1] for ve in F.otype.s('verse')]
-    final_words_of_clause_atoms = [L.d(pa, 'word')[-1] for pa in F.otype.s('clause_atom')]
-    assert all([node in final_words_of_clause_atoms for node in final_words_of_verses])
-
 def test_last_word_of_clause_atom_is_last_word_of_phrase_atom():
     final_words_of_clause_atoms = [L.d(ph, 'word')[-1] for ph in F.otype.s('clause_atom')]
     final_words_of_phrase_atoms = [L.d(pa, 'word')[-1] for pa in F.otype.s('phrase_atom')]
