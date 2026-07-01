@@ -1,0 +1,14 @@
+services:
+  samaritan-pentateuch:
+    image: samaritan-pentateuch
+    container_name: samaritan-pentateuch
+    build:
+      context: ../.
+      dockerfile: ./.devcontainer/Dockerfile
+    working_dir: /samaritan-pentateuch
+    ports:
+      - '8080:8080'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ..:/samaritan-pentateuch:cached
+    tty: true

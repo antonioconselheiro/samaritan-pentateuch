@@ -1,0 +1,17 @@
+{
+  "name": "Samaritan Pentateuch Dev",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "samaritan-pentateuch",
+  "workspaceFolder": "/samaritan-pentateuch",
+  "postCreateCommand": "./.devcontainer/auth.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "Leymora.breeze-theme"
+      ]
+    }
+  }
+}
