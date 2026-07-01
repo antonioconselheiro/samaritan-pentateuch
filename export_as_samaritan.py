@@ -12,6 +12,7 @@ api = A.api
 
 F = api.F
 T = api.T
+L = api.L
 
 # --------------------------------------------------
 # Mapeamento oficial ETCBC → Unicode Samaritano
@@ -94,7 +95,7 @@ for verse in F.otype.s("verse"):
     # --------------------------------------------------
     words = []
 
-    for w in T.words(verse):
+    for w in L.d(verse, otype="word"):
 
         latin = F.g_cons.v(w)
         sam = to_samaritan(latin)
