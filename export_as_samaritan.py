@@ -87,7 +87,7 @@ for verse in F.otype.s("verse"):
         current_chapter = None
 
     if chapter != current_chapter:
-        data[book].append([])
+        data[book].append({"chapter":chapter,"verses": []})
         current_chapter = chapter
 
     # --------------------------------------------------
@@ -106,7 +106,7 @@ for verse in F.otype.s("verse"):
 
     text = "".join(words).strip()
 
-    data[book][-1].append({
+    data[book][-1]["verses"].append({
         "verse": int(verse_num),
         "text": text
     })
