@@ -98,16 +98,16 @@ for verse in F.otype.s("verse"):
     for w in L.d(verse, otype="word"):
 
         latin = F.g_cons.v(w)
-        sam = to_samaritan(latin)
+        # sam = to_samaritan(latin)
 
         trailer = F.trailer.v(w) or ""
 
-        words.append(sam + trailer)
+        words.append(latin + trailer)
 
     text = "".join(words).strip()
 
     data[book][-1].append({
-        "verse": str(verse_num),
+        "verse": int(verse_num),
         "text": text
     })
 
@@ -122,7 +122,7 @@ for book, filename in BOOKS.items():
             {"chapters": data[book]},
             f,
             ensure_ascii=False,
-            indent=2
+            separators=(",", ":")
         )
 
     print(f"✓ {filename}")
